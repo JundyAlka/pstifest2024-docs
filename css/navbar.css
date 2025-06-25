@@ -1,0 +1,195 @@
+/* Navigation Styles */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: rgba(15, 15, 35, 0.8);
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all var(--transition-normal);
+    padding: 0 1.5rem; /* Add padding to the sides of the navbar */
+}
+
+.navbar.scrolled {
+    background: rgba(15, 15, 35, 0.95);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.nav-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 2rem; /* Add padding to match logo spacing */
+    display: flex;
+    align-items: center;
+    height: 80px;
+    position: relative;
+    width: 100%;
+    justify-content: flex-start; /* Align items to the start */
+}
+
+/* Logo */
+.nav-logo {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+    font-family: var(--font-accent);
+    font-weight: 900;
+    font-size: 1.5rem;
+    color: var(--text-primary);
+    text-decoration: none;
+    min-width: 200px; /* Ensure consistent width for logo */
+}
+
+.logo-text {
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.logo-year {
+    color: var(--secondary-color);
+    font-size: 1.2rem;
+}
+
+/* Navigation Menu */
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+    margin: 0 0 0 4rem; /* Add left margin to create space from logo */
+    padding: 0;
+    height: 100%;
+    align-items: center;
+    position: relative;
+    left: 0;
+}
+
+.nav-link {
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem; /* Slightly larger font */
+    padding: 0.7rem 1rem; /* Slightly more padding */
+    border-radius: var(--radius-sm);
+    transition: all var(--transition-normal);
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    line-height: 1.2;
+    white-space: nowrap;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: var(--secondary-color);
+    background: rgba(0, 212, 255, 0.1);
+    transform: translateY(-1px);
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%) scaleX(0);
+    width: 80%;
+    height: 3px;
+    background: var(--secondary-color);
+    transition: transform var(--transition-normal);
+    border-radius: 2px;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+    transform: translateX(-50%) scaleX(1);
+}
+
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 4px;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background: var(--text-primary);
+    border-radius: 2px;
+    transition: all var(--transition-normal);
+}
+
+.hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -6px);
+}
+
+/* Mobile Navigation */
+@media (max-width: 768px) {
+    .nav-menu {
+        position: fixed;
+        top: 80px;
+        left: 0;
+        right: 0;
+        background: rgba(15, 15, 35, 0.95);
+        backdrop-filter: blur(20px);
+        flex-direction: column;
+        padding: var(--spacing-lg);
+        gap: var(--spacing-md);
+        transform: translateY(-100%);
+        opacity: 0;
+        visibility: hidden;
+        transition: all var(--transition-normal);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    
+    .nav-menu.active {
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    .hamburger {
+        display: flex;
+    }
+    
+    .nav-link {
+        padding: var(--spacing-sm);
+        border-radius: var(--radius-md);
+        text-align: center;
+    }
+    
+    .nav-link:hover,
+    .nav-link.active {
+        background: rgba(0, 212, 255, 0.2);
+    }
+}
+
+/* Navigation Animation */
+@keyframes navSlideIn {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.navbar {
+    animation: navSlideIn 0.5s ease-out;
+}
+
