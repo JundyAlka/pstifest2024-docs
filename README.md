@@ -102,7 +102,7 @@ psti-fest-2024/
 
 ## 📸 Screenshot
 
-![Halaman Utama](screenshots/home.png)
+![Halaman Utama](screenshots/Home.png)
 
 ### Cara Menambahkan Screenshot:
 1. Simpan screenshot dengan nama `home.png` di folder `screenshots/`
