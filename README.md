@@ -102,9 +102,12 @@ psti-fest-2024/
 
 ## 📸 Screenshot
 
-| Halaman Utama | Dashboard Admin |
-|--------------|----------------|
-| ![Halaman Utama](screenshots/home.png) | ![Dashboard Admin](screenshots/dashboard.png) |
+![Halaman Utama](screenshots/home.png)
+
+### Cara Menambahkan Screenshot:
+1. Simpan screenshot dengan nama `home.png` di folder `screenshots/`
+2. Gambar akan otomatis muncul di atas
+3. Pastikan ukuran gambar maksimal 1200px lebar untuk tampilan optimal
 
 ## 🤝 Berkontribusi
 
