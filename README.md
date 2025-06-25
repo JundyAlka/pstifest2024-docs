@@ -1,40 +1,132 @@
-# Website Dokumentasi PSTI FEST 2024
+# 🚀 PSTI FEST 2024 - Website Dokumentasi Resmi
 
-## Deskripsi
-Website dokumentasi untuk acara seminar dan lomba PSTI FEST 2024 dengan tema "Technology Driven Society Empowerment". Website ini dibuat dengan desain futuristik yang sesuai dengan homepage PSTI FEST 2025 dan mengadopsi tata letak dari website oprec24.my.id.
+<div align="center">
+  <img src="https://img.shields.io/badge/Status-Live-brightgreen?style=for-the-badge">
+  <img src="https://img.shields.io/badge/License-MIT-blue?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Version-1.0.0-yellow?style=for-the-badge">
+</div>
 
-## Fitur Utama
+## 🌟 Tentang Proyek
 
-### 1. Design System Futuristik
-- **Color Palette**: Dark blue (#1a1a2e), Cyan (#00d4ff), Red accent (#ff6b6b)
-- **Typography**: Poppins (headings), Inter (body), Orbitron (accent)
-- **Effects**: Glassmorphism, neon glow, particle background, parallax scrolling
+Website dokumentasi resmi untuk acara tahunan Program Studi Teknologi Informasi dengan tema **"Technology Driven Society Empowerment"**. Dibangun dengan teknologi modern dan desain futuristik untuk memberikan pengalaman pengguna yang optimal.
 
-### 2. Sections Website
-- **Hero Section**: Judul utama dengan efek typewriter dan card floating
-- **Overview Section**: Statistik acara dengan counter animation
-- **Seminar Section**: Dokumentasi seminar dengan info narasumber
-- **Lomba Section**: Dokumentasi 3 kompetisi (Ideathon, Badminton, Smart Village Awards)
-- **Timeline Section**: Timeline interaktif kegiatan PSTI FEST 2024
-- **Gallery Section**: Galeri foto dengan filter dan lightbox
-- **About Section**: Informasi tentang PSTI FEST 2024
-- **Footer**: Kontak dan social media links
+## ✨ Fitur Unggulan
 
-### 3. Fitur Interaktif
-- **Responsive Navigation**: Sticky navbar dengan mobile hamburger menu
-- **Smooth Scrolling**: Navigasi halus antar section
-- **Gallery Lightbox**: Modal untuk preview gambar
-- **Filter Gallery**: Filter foto berdasarkan kategori
-- **Counter Animation**: Animasi angka statistik
-- **Parallax Effects**: Efek parallax pada elemen visual
-- **Hover Effects**: Efek hover pada cards dan buttons
+### 🔐 Sistem Autentikasi
+- **Login/Register** dengan validasi form
+- **Manajemen Session** yang aman
+- **Profil Pengguna** dengan avatar
+- **Role-based Access Control** (Admin/User)
 
-### 4. Teknologi yang Digunakan
-- **HTML5**: Semantic markup
-- **CSS3**: Custom properties, Grid, Flexbox, animations
-- **JavaScript**: Vanilla JS untuk interaktivitas
-- **Particles.js**: Background particle effects
-- **Responsive Design**: Mobile-first approach
+### 🖥️ Dashboard Admin
+- **CRUD** (Buat, Baca, Update, Hapus) konten
+- **Manajemen Pengguna**
+- **Analitik Pengunjung**
+- **Backup Database**
+
+### 🎨 Fitur Interaktif
+- **Dark/Light Mode**
+- **Responsive Design** (Mobile, Tablet, Desktop)
+- **Animasi Modern** dengan GSAP
+- **Gallery dengan Lightbox**
+- **Form dengan Validasi**
+- **Pencarian & Filter**
+
+## 🛠️ Teknologi
+
+### Frontend
+- **HTML5** (Semantic Markup)
+- **CSS3** (Flexbox, Grid, Animations)
+- **JavaScript** (ES6+)
+- **Particles.js** (Background Effects)
+
+### Backend
+- **Node.js**
+- **Express.js**
+- **MongoDB** (Database)
+- **JWT** (Autentikasi)
+
+## 🚀 Cara Instalasi
+
+### Prasyarat
+- Node.js (v14+)
+- npm (v6+)
+- MongoDB
+
+### Langkah-langkah
+1. Clone repository
+   ```bash
+   git clone https://github.com/username/psti-fest-2024.git
+   cd psti-fest-2024
+   ```
+
+2. Install dependencies
+   ```bash
+   npm install
+   ```
+
+3. Konfigurasi Environment
+   ```bash
+   cp .env.example .env
+   # Sesuaikan konfigurasi di file .env
+   ```
+
+4. Jalankan Aplikasi
+   ```bash
+   npm start
+   ```
+
+5. Buka di Browser
+   ```
+   http://localhost:3000
+   ```
+
+## 📂 Struktur Proyek
+
+```
+psti-fest-2024/
+├── public/           # File statis (images, fonts, etc.)
+├── src/
+│   ├── assets/       # Aset (CSS, JS, images)
+│   ├── components/   # Komponen UI
+│   ├── config/       # Konfigurasi
+│   ├── controllers/  # Logic controller
+│   ├── middleware/   # Middleware Express
+│   ├── models/       # Model database
+│   ├── routes/       # Route definitions
+│   └── views/        # Template views
+├── .env.example      # Contoh konfigurasi
+├── app.js            # Aplikasi utama
+└── package.json      # Dependensi dan scripts
+```
+
+## 📸 Screenshot
+
+| Halaman Utama | Dashboard Admin |
+|--------------|----------------|
+| ![Halaman Utama](screenshots/home.png) | ![Dashboard Admin](screenshots/dashboard.png) |
+
+## 🤝 Berkontribusi
+
+Kontribusi terbuka! Ikuti langkah berikut:
+1. Fork repository
+2. Buat branch (`git checkout -b fitur/namafitur`)
+3. Commit perubahan (`git commit -m 'Menambahkan fitur baru'`)
+4. Push ke branch (`git push origin fitur/namafitur`)
+5. Buat Pull Request
+
+## 📄 Lisensi
+
+Dilisensikan di bawah [MIT License](LICENSE)
+
+---
+
+## 👨‍💻 Developer
+
+👤 **hey.alk**  
+💼 [Portofolio](https://github.com/hey-alk) | ✉️ [Email](mailto:hey.alk@example.com)
+
+© 2024 PSTI FEST - All Rights Reserved
 
 ## Struktur File
 
