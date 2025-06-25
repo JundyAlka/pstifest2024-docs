@@ -104,11 +104,6 @@ psti-fest-2024/
 
 ![Halaman Utama](screenshots/Home.png)
 
-### Cara Menambahkan Screenshot:
-1. Simpan screenshot dengan nama `home.png` di folder `screenshots/`
-2. Gambar akan otomatis muncul di atas
-3. Pastikan ukuran gambar maksimal 1200px lebar untuk tampilan optimal
-
 ## 🤝 Berkontribusi
 
 Kontribusi terbuka! Ikuti langkah berikut:
